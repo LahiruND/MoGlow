@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | MoGlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#1A1A1A',
+                            light: '#FAFAFA',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-brand-dark text-brand-light font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-brand-dark/95 border-b border-white/10 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                        class="text-3xl font-serif text-brand-gold tracking-wider hover:opacity-80 transition">MoGlow</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-brand-light hover:text-brand-gold px-3 py-2 rounded-md text-sm font-medium tracking-wide transition">Home</a>
+                        <a href="products.html"
+                            class="text-brand-light hover:text-brand-gold px-3 py-2 rounded-md text-sm font-medium tracking-wide transition">Shop</a>
+                        <a href="about.html"
+                            class="text-brand-gold px-3 py-2 rounded-md text-sm font-medium tracking-wide">Our Story</a>
+                        <a href="contact.html"
+                            class="text-brand-light hover:text-brand-gold px-3 py-2 rounded-md text-sm font-medium tracking-wide transition">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-brand-light hover:text-brand-gold focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-brand-dark border-t border-white/10" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-brand-light hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="products.html"
+                    class="text-brand-light hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Shop</a>
+                <a href="about.html" class="text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Our
+                    Story</a>
+                <a href="contact.html"
+                    class="text-brand-light hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <div class="relative h-[60vh] overflow-hidden">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1602825266988-75001f7090ae?auto=format&fit=crop&q=80&w=1920"
+            class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 h-full flex items-center justify-center text-center">
+            <div>
+                <span class="text-brand-gold uppercase tracking-widest text-sm font-semibold mb-4 block">About Us</span>
+                <h1 class="text-5xl md:text-7xl font-serif text-white">The Art of Illumination</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <section class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+        <div class="space-y-16">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-serif text-white mb-6">Our Beginning</h2>
+                    <p class="text-gray-400 leading-loose">
+                        MoGlow began with a simple passion: to create an atmosphere of serenity in a chaotic world.
+                        Started in a small kitchen in Colombo, our journey has been fueled by the obsession to craft the
+                        perfect candle. We believe that a candle is not just wax and wick, but a vessel for memories and
+                        moods.
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=600"
+                        class="rounded-lg shadow-xl shadow-brand-gold/10">
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-serif text-white mb-6">Our Craft</h2>
+                    <p class="text-gray-400 leading-loose">
+                        We prioritize quality above all else. Every MoGlow candle is hand-poured using 100% natural soy
+                        wax and lead-free cotton wicks. We source premium fragrances that are free from phthalates and
+                        parabens, ensuring a clean burn that is safe for you and your family.
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <img src="https://images.unsplash.com/photo-1596433809252-260c2745a857?auto=format&fit=crop&q=80&w=600"
+                        class="rounded-lg shadow-xl shadow-brand-gold/10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team / Values -->
+    <section class="bg-[#151515] py-24">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-serif text-white mb-16">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-brand-gold text-4xl mb-4 font-serif">01</div>
+                    <h3 class="text-white text-xl font-bold mb-2">Sustainability</h3>
+                    <p class="text-gray-500 text-sm">Eco-friendly materials and packaging.</p>
+                </div>
+                <div>
+                    <div class="text-brand-gold text-4xl mb-4 font-serif">02</div>
+                    <h3 class="text-white text-xl font-bold mb-2">Quality</h3>
+                    <p class="text-gray-500 text-sm">Rigorous testing for the perfect burn.</p>
+                </div>
+                <div>
+                    <div class="text-brand-gold text-4xl mb-4 font-serif">03</div>
+                    <h3 class="text-white text-xl font-bold mb-2">Artistry</h3>
+                    <p class="text-gray-500 text-sm">Beautiful designs that elevate your decor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-white/10 text-center">
+        <p class="text-sm text-gray-500">&copy; 2026 MoGlow Candles. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
